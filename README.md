@@ -69,21 +69,22 @@ This project integrates **FPGA-based DSP, AXI interconnects, Linux on ARM, and a
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/qiandawg/software-defined-radio.git
-   cd software-defined-radio
-   
-2. run make_project.bat (windows) or make_project.sh (linux) to build the project all the way through SD card creation.
+   git clone git@github.com:Suke2004/RTL_SDR_FPGA.git
+   cd RTL_SDR_FPGA
+   ```
+
+2. Run `make_project.bat` (Windows) or `make_project.sh` (Linux) to build the project all the way through SD card creation.
 
 3. **Copy the Web Package**  
-   Copy "sdr_files\src\web.tgz" to your Zybo board.  
+   Copy "sdr_files\src\web.zip" to your Zybo board.  
    *The location is flexible — you may place it on the SD card or in the temporary RAM filesystem.*
 
 4. **Extract the Archive**  
    Run the following command to extract the files:  
    ```bash
-   tar -xvf web.tgz
+   unzip web.zip
    ```  
-   This creates a new directory named `web` in your current path.
+   This creates a `web` directory in your current path.
 
 5. **Start the Webserver**  
    Change into the `web` directory and start the built-in webserver:  
